@@ -1,0 +1,96 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+font-family: 'machinato Regular'; /* Edit this line */
+
+src: url('../fonts/Jelloween - Machinato.ttf') format("truetype");
+}
+@font-face {
+font-family: 'machinato Extra Light'; /* Edit this line */
+src: url('../fonts/Jelloween - Machinato ExtraLight.ttf') format("truetype");
+}
+@font-face {
+font-family: 'machinato Semi Bold Italic'; /* Edit this line */
+src: url('../fonts/Jelloween - Machinato SemiBold Italic.ttf') format("truetype");
+}
+@font-face {
+font-family: 'machinato Bold'; /* Edit this line */
+src: url('../fonts/Jelloween - Machinato Bold.ttf') format("truetype");
+}
+@font-face {
+font-family: 'machinato light'; /* Edit this line */
+src: url('../fonts/Jelloween - Machinato Light.ttf') format("truetype");
+}
+
+chatName{
+
+
+}
+h3{font-family:'machinato Bold';font-size:22pt;color:#ffffff;padding-left:40px;" class="padding-left}
+p{
+font-family:'machinato';
+font-size: 15pt;
+color:#ffffff;
+}
+.fade-in-out {
+  transition: 1s linear all;  
+  opacity: 1;
+}
+
+.fade-in-out.ng-hide {
+  opacity: 0;
+}
+.animate-enter {
+	-webkit-transition: 1s linear all; /* Chrome */
+	transition: 1s linear all;
+	opacity: 0;
+}
+ 
+.animate-enter.animate-enter-active {
+	opacity: 1;
+}
+#myDiv {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg); /* Standard syntax */
+}
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
