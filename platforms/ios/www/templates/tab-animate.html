@@ -1,0 +1,28 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Animation" style="background-image:url('assets/bg_animation.png')">
+<ion-nav-bar class="bar-dark">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+  <ion-content class="padding">
+  
+  <div style="width:90%;margin:30px auto ;";border:1px solid #ffffff;>
+    <div style="background-color:#ffffff">
+    <p style="padding:10px;width:100%;font-family:'machinato Extra Light';font-size:12pt;text-align:center;border-radius:10px;color:#000000">Animate the App Partner icon. Make it fade to 0% alpha and then to 100% alpha when the fade button is pressed. Allow it to be dragged around the screen by touching and dragging.</p>
+    <p style="padding:10px;font-family:'machinato Semi Bold Italic';font-size:15pt;color:#000000">BONUS POINTS FOR CEATIVITY.</p>
+    <img style="margin-left:10%"ng-show="visible" class="fade-in-out" src="assets/ic_apppartner.png"></div>
+    <div style="margin-top:20px;padding-left:10%"><img ng-click=" visible = !visible" src="assets/btn_fade.png"/>
+    </div></div>
+  
+  
+   
+   
+
+    
+  </ion-content>
+</ion-view>

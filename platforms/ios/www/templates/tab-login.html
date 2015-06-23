@@ -1,0 +1,28 @@
+<ion-view  view-title="Login">
+<ion-nav-bar style="backgound-color:#000000;color:#ffffff" class="bar-dark">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+  <ion-content style="background-image:url('assets/bg_login.png');background-repeat: no-repeat;background-position: center top;">
+
+  <div style="margin-top:20%">
+    <ion-list>
+    <div class="list list-inset">
+  <label class="item item-input">
+   
+    <input ng-model="user" type="text"  style="font-family:'machinato Regular';
+font-size: 11pt;line-height:20px" placeholder="username">
+  </label>
+</div>
+<div class="list list-inset">
+  <label class="item item-input">
+    
+    <input style="font-family:'machinato Regular';
+font-size: 11pt;" ng-model="password" type="password" placeholder="password">
+  </label>
+</div>
+<img ng-click="login(password,user)" style="margin-top:30%;margin-left:15%;width:70%"src="assets/btn_login.png"/>
+<div>
+    </ion-list>
+  </ion-content>
+</ion-view>
